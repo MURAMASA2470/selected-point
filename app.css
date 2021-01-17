@@ -1,0 +1,27 @@
+:root {
+  --selectPointSize: 100px;
+}
+
+.container {
+  width: 100vw;
+  height: 100vh;
+}
+
+.container > .box {
+  width: 600px;
+  height: 860px;
+  margin: 30px auto;
+  border: solid 1px black;
+  position: relative;
+}
+
+.selected-point {
+  width: var(--selectPointSize);
+  height: var(--selectPointSize);
+  border-radius: 20px;
+  background-color: rgba(255, 159, 159, 0.2);
+  position: absolute;
+  top: 50px;
+  left: 100px;
+  pointer-events: none;
+}
